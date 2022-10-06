@@ -39,7 +39,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%; /* 30px top & botton, 10% on the left & rigth */
+    padding: 20px 10%; /* 30px top & botton, 10% on the left & rigth */
 }
 
 .mylogo {
@@ -48,6 +48,10 @@ header {
 
 .nav__links {
     list-style: none;
+    /* border: 1px solid white; */
+    /* center inside of nav */
+    display: block;
+    margin: auto auto;
 }
 .nav__links li {
     display: inline-block;
