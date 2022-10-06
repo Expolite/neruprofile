@@ -1,8 +1,12 @@
 
 /* link fonts */
 @font-face {
-    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
     font-family: Montserrat;
+    src: url(../fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf);
+    font-family: Ubuntu Mono;
+    src: url(../fonts/Noto_Sans/NotoSans-Regular.ttf);
+    font-family: Noto Sans;
 }
 
 * {
@@ -19,15 +23,11 @@ body {
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
-.myContainer {
-    border: 1px solid white; /* temp */
-    padding: 5px; /* modify */
-    color: white;
-}
+
 
 
 /* Navbar */
-.nav__links li, a, button {
+.nav__links li, a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -40,6 +40,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%; /* 30px top & botton, 10% on the left & rigth */
+    width: 100%;
 }
 
 .mylogo {
@@ -58,21 +59,48 @@ header {
     padding: 0px 20px;
 }
 .nav__links li a {
-    transition: all 0.3s ease 0s;
+    font-family: "Ubuntu Mono";
+    font-size: 20px;
+    position: relative;
+    top: 0;
 }
 .nav__links li a:hover {
-    color: #0088a9;
+    /* color: #0088a9; */
+    color: #38d1ef;
+    position: relative;
+    top: -5px;
 }
 
-button {
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-button:hover {
-    background-color: rgba(0,136,169,0.8);
+/* User Logo Border */
+.userLogoBorder {
+    border: 2px solid white;
+    padding: 5px 7px;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 /* END Navbar */
+
+
+.myContainer {
+    border: 1px solid white; /* temp */
+    padding: 5px; /* modify */
+    color: white;
+}
+
+
+
+/* my Name */
+.myName {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7rem;
+    margin: 8rem 3rem;
+    color: #E8E8E8;
+}
+#fname {
+    transition: all .7s ease;
+    margin-left: -34rem;
+}
+.myName #lname {
+    margin-left: -44rem;
+    transition: all .7s ease;
+}
