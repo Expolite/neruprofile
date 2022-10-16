@@ -36,15 +36,18 @@ body {
 }
 
 header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%; /* 30px top & botton, 10% on the left & rigth */
     width: 100%;
+    border: 1px solid white; /* temp */
 }
 
 .mylogo {
     cursor: pointer;
+    border: 1px solid white;
 }
 
 .nav__links {
@@ -85,6 +88,7 @@ header {
     border: 1px solid white; /* temp */
     padding: 5px; /* modify */
     color: white;
+    width: fit-content;
 }
 
 
@@ -95,12 +99,117 @@ header {
     font-size: 7rem;
     margin: 8rem 3rem;
     color: #E8E8E8;
+    border: 1px solid white; /* temp */
 }
 #fname {
-    transition: all .7s ease;
+    transition: all .7s ease-out;
     margin-left: -34rem;
 }
 .myName #lname {
     margin-left: -44rem;
-    transition: all .7s ease;
+    transition: all .7s ease-out;
+}
+
+
+
+
+/* Menu bar Icon */
+.menuIconContainer {
+    display: none;
+    cursor: pointer;
+}
+  
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #E8E8E8;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 30px;
+}
+
+.menuIconContainer:hover > .bars {
+    background-color: #38d1ef;
+}
+
+.MenuIconchange .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.MenuIconchange .bar2 {opacity: 0;}
+
+.MenuIconchange .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Layout ~ 950px */
+@media screen and (max-width: 950px) {
+    /* Main Logo */
+    .mylogo {
+        position: absolute;
+        left: 3vw;
+        display: block;
+        margin: auto;
+    }
+    /* Navbar Header */
+    header {
+        flex-direction: column;
+        height: 70px;
+    }
+    nav {
+        border: 1px solid white; /* temp */
+        margin-top: 50px;
+        display: block;
+        position: absolute;
+        /* right: 20px; */
+        right: -190px;
+        width: fit-content;
+    }
+    .nav__links li {
+        display: block;
+    }
+    /* Name */
+    .myName {
+        font-size: 5rem;
+        font-weight: bold;
+        margin: 8rem .5rem;
+        width: fit-content;
+    }
+    /* navbar items hover */
+    .nav__links li a {
+        align-items: left;
+        display: flex;
+    }
+    .nav__links li a:hover {
+        /* color: #0088a9; */
+        color: #38d1ef;
+        position: relative;
+        top: 0;
+        left:5px;
+    }
+    .navItemIcon {
+        margin-right: 5px;
+        position: relative;
+        top: 5px;
+    }
+
+
+    /* Menu Bar Icon */
+    .menuIconContainer {
+        display: inline-block;
+        position: absolute;
+        right: 4vw;
+        margin-top: -5px;
+    }
 }
