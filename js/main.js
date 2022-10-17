@@ -17,4 +17,16 @@ function fname_marginRght() {
 // Menu Bar Icon
 function toggleFunc(a) {
 	a.classList.toggle("MenuIconchange");
+
+	// Items Navbar items
+	// Check checkbox 
+	document.getElementById("chckbox_toggleMenu").click();
+	// If the checkbox is checked, minimize/hide the items with height
+	if (chckbox_toggleMenu.checked == true){
+		navLinks.style.height = "0";
+	} else {
+		navLinks.style.height = "38px";
+	}
+
+
 }

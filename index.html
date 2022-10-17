@@ -20,7 +20,7 @@
 <body>
 
 	<!-- Navbar -->
-	<header>
+	<header class="myHeader">
 		<div align="left">
 			<img onclick="alert('Hello');" class="mylogo" src="img/main/mainLogo.png" height="30" alt="mylogo">
 		</div>
@@ -30,7 +30,9 @@
 			<div class="bar2 bars"></div>
 			<div class="bar3 bars"></div>
 		</div>
-		<nav>
+		<input type="checkbox" id="chckbox_toggleMenu" style="display: none;">
+
+		<nav id="navLinks">
 			<ul class="nav__links">
 				<li><a href="#"> <i class="fa-solid fa-cube navItemIcon"></i> Home</a></li>
 				<li><a href="#"> <i class="fa-solid fa-cube navItemIcon"></i> Projects</a></li>
