@@ -52,7 +52,7 @@ header {
 
 .nav__links {
     list-style: none;
-    /* border: 1px solid white; */
+    /* border: 1px solid blue; */
     /* center inside of nav */
     display: block;
     margin: auto auto;
@@ -246,7 +246,67 @@ header {
 
 
 
-/* 640px */
-@media screen and (max-width: 640px) {
+/* 630px */
+@media screen and (max-width: 630px) {
+    /* Menu bar icon */
+    .menuIconContainer {
+        display: block;
+    }
+    /* navbar items */
+    #navLinks {
+        height: 0;
+        overflow: hidden; /* hide scroll bar */
+        transition: all .3s ease-out;
+    }
+    .nav__links li {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav__links li a {
+        padding: 2px;
+    }
+    nav {
+        width: 100%;
+    }
+    .myName {
+        margin-top: 8.5rem;
+    }
+}
 
+
+
+
+/* 480 */
+@media screen and (max-width: 480px) {
+    /* Resize Name */
+    .myName {
+        font-size: 3.5rem;
+    }
+}
+
+
+
+
+
+
+/* 450 */
+@media screen and (max-width: 450px) {
+    /* Resize Name */
+    .myName {
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
+
+
+/* 390 */
+@media screen and (max-width: 390px) {
+    /* Resize Name */
+    .myName {
+        font-size: 2.5rem;
+    }
 }

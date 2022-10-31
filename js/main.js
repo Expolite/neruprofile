@@ -22,10 +22,11 @@ function toggleFunc(a) {
 	// Check checkbox 
 	document.getElementById("chckbox_toggleMenu").click();
 	// If the checkbox is checked, minimize/hide the items with height
-	if (chckbox_toggleMenu.checked == true){
+	if (chckbox_toggleMenu.checked == false){
 		navLinks.style.height = "0";
 	} else {
-		navLinks.style.height = "38px";
+		// navLinks.style.height = "38px";
+		navLinks.style.height = "135px";
 	}
 
 
