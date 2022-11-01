@@ -7,6 +7,10 @@
     font-family: Ubuntu Mono;
     src: url(../fonts/Noto_Sans/NotoSans-Regular.ttf);
     font-family: Noto Sans;
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+    font-family: Ubuntu;
+    src: url(../fonts/Kanit/Kanit-Regular.ttf);
+    font-family: Kanit;
 }
 
 * {
@@ -96,7 +100,8 @@ header {
 .myName {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 7rem;
-    margin: 8rem 3rem;
+    margin: 0 3rem;
+    margin-top: 8rem;
     color: #E8E8E8;
     border: 1px solid white; /* temp */
 }
@@ -139,6 +144,15 @@ header {
 
 .MenuIconchange .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+}
+
+
+/* Sub Title */
+.myTitle {
+    border: 1px solid white; /* temp */
+    margin: 0 3rem;
+    color: #38d1ef;
+    font-family: "Kanit";
 }
 
 
@@ -186,7 +200,8 @@ header {
     .myName {
         font-size: 5rem;
         font-weight: bold;
-        margin: 8rem .5rem;
+        margin: 0 .5rem;
+        margin-top: 8rem;
         width: fit-content;
     }
     /* navbar items hover */
@@ -234,7 +249,8 @@ header {
     .myName {
         font-size: 4rem;
         font-weight: bold;
-        margin: 8rem .5rem;
+        margin: 0 .5rem;
+        margin-top: 8rem;
         width: fit-content;
     }
 }
