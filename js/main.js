@@ -10,6 +10,30 @@ function fname_marginRght() {
 	lname.style.marginLeft = "5rem";
 }
 
+/* Delay the opacity */
+setTimeout(opacity_delay_Fname, 1100); // 1.1 second
+function opacity_delay_Fname() {
+	fname.style.opacity = "1";
+}
+setTimeout(opacity_delay_Lname, 1200); // 1.2 second
+function opacity_delay_Lname() {
+	lname.style.opacity = "1";
+}
+
+
+
+
+// sub title
+setTimeout(subTitle_opacity, 1700); // 1.7 second
+function subTitle_opacity() {
+	idTitles.style.opacity = "1"; // opacity set to 1
+}
+
+setTimeout(subTitle_top, 1700); // 1.7 second
+function subTitle_top() {
+	idTitles.style.top = "0"; // bring down
+}
+
 
 
 
